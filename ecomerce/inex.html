@@ -1,57 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="This is a sample HTML document.">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body class="bg-[#]">
+
+<body class="min-h-screen bg-[linear-gradient(to_bottom,_#1B1A24_0%,_#FFF8F8_0%,_#E2E2E2_34%,_#FAFAFA_100%)]">
     <header>
         <nav>
-             
-            <ul class="flex flex-row justify-center items-center text-2xl p-4 bg-[#F9F9FA] text-white space-x-5 rounded=[50px]">
+            <ul
+                class="flex flex-row justify-center items-center text-2xl p-4 bg-[#F9F9FA] text-[#8F8F8F] space-x-5 rounded-[50px] shadow-md w-fit mx-auto mt-6 px-10">
                 <li><a href="#home">Home </a></li>
-                <li><a href="#Category">About </a></li>
+                <li><a href="#Category">Category </a></li>
+                <li><a href="#About">About us </a></li>
                 <li><a href="#Contact">Contact </a></li>
-                <li><a href="#About us">Contact </a></li>
-                <li><a href="#Cart">Contact </a></li>
+                <li><a href="#Cart">Cart </a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="h-[72px] text-center bg-[#2B2A2A] text-[#FFFFFF] p-6">EL FUTURO ES AHORA. TECNOLOGÍA SIN LÍMITES.
-         <span>Encuentra los componentes, laptops y accesorios que redefinen tu experiencia.</span> 
-         <strong class="text-[#4742D5]">EXPLORAR PRODUCTOS ></strong>
-        </div>
-
     <main>
+
+        <section id="hero-banner" class="mt-8 pb-10">
+            <div class="h-[72px] text-center bg-[#2B2A2A] text-[#FFFFFF] p-6 space-y-10 text-2xl">EL FUTURO ES AHORA.
+                TECNOLOGÍA
+                SIN LÍMITES.
+                <span class="text-1xl">Encuentra los componentes, laptops y accesorios que redefinen tu
+                    experiencia.</span>
+                <strong class="text-[#4742D5] text-1xl">EXPLORAR PRODUCTOS ></strong>
+            </div>
+        </section>
+
         <section id="hero-carousel">
 
         </section>
 
-        <section id="shop-by-category">
-            <h2>Shop by Category</h2>
+        <section id="shop-by-category" class="py-16 bg-[#FAFAFA]">
+            <div class="max-w-[1800px] mx-auto px-6 sm:px-8 md:px-10">
+                <h2 class="text-5xl md:text-5xl font-bold text-gray-800 mb-10 text-center mb-20">
+                    Shop by Category
+                </h2>
+
+                <!-- Masonry layout -->
+                <div class="columns-2 gap-[32px]">
+
+                    <!-- Perifericos -->
+                    <a href="#Perifericos"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/M314_1080x.webp" alt="Perifericos"
+                            class="w-full object-cover aspect-[850/641] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Perifericos
+                        </div>
+                    </a>
+
+                    <!-- Componentes -->
+                    <a href="#Case"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/1820_1213.jpg" alt="Case"
+                            class="w-full object-cover aspect-[850/767] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Case
+                        </div>
+                    </a>
+
+                    <!-- Case -->
+                    <a href="#Componentes"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/Processor-black-background.jpg" alt="Componentes"
+                            class="w-full object-cover aspect-[850/767] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Componentes
+                        </div>
+                    </a>
+
+                    <!-- Laptops -->
+                    <a href="#Laptops"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/Alienware_2D00_17_2D00_Front_2D00_Reflection_2D00_1200_5F00_74014EC9.jpg"
+                            alt="Laptops"
+                            class="w-full object-cover aspect-[850/641] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Laptops
+                        </div>
+                    </a>
+
+                </div>
+            </div>
         </section>
 
-        <section id="featured-products">
-            <h2>Our Feature Products</h2>
+
+        <section id="featured-products" class="py-16 bg-[#FAFAFA]">
+
+            <div class="max-w-[1800px] mx-auto px-6 sm:px-8 md:px-10">
+                <h2 class="text-5xl md:text-5xl font-bold text-gray-800 mb-10 text-center mb-20">Our Feature Products
+                </h2>
+
+                <!-- Grid Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[32px] place-items-center">
+
+                    <!-- Cards 1 -->
+                    <div class="w-[800px] h-[676px] max-w-sm bg-white rounded-lg shadow-md p-5">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4"
+                            src="/tuma/ASUS ROG ASTRAL VGA RTX5080-O16G & RTX5090-O32G GAMING - Powerful Overclocked GPUS.jpg"
+                            alt="ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming" />
+                        <h3 class="text-2xl mb-5">ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming</h3>
+                        <p class="text-gray-600 mb-4">Powerful Overclocked GPUs for Gaming</p>
+                        <button class="rounded-[20px] bg-[#006FEE] text-[#FFFFFF] text-md px-4 py-2"> View
+                            Product</button>
+                    </div>
+
+                    <!-- Cards 2 -->
+                     <div class="w-[560px] h-[676px] max-w-sm bg-white rounded-lg shadow-md p-5">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4"
+                            src="/tuma/razer-viper-mini-signature-edition.jpg"
+                            alt="Razer Viper Mini Signature Edition" />
+                        <h3 class="text-2xl mb-5">Razer Viper Mini Signature Edition</h3>
+                        <p class="text-gray-600 mb-4">Lightweight and Ergonomic Gaming Mouse</p>
+                        <button class="rounded-[20px] bg-[#006FEE] text-[#FFFFFF] text-md px-4 py-2"> View
+                            Product</button>
+                    </div>
+
+                    <!-- Cards 3 -->
+                     <div class="w-[560px] h-[676px] max-w-sm bg-white rounded-lg shadow-md p-5">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4"
+                            src="/tuma/ASUS ROG ASTRAL VGA RTX5080-O16G & RTX5090-O32G GAMING - Powerful Overclocked GPUS.jpg"
+                            alt="ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming" />
+                        <h3 class="text-2xl mb-5">ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming</h3>
+                        <p class="text-gray-600 mb-4">Powerful Overclocked GPUs for Gaming</p>
+                        <button class="rounded-[20px] bg-[#006FEE] text-[#FFFFFF] text-md px-4 py-2"> View
+                            Product</button>
+                    </div>
+                </div>
+
+
+            </div>
+
         </section>
 
         <section id="What's New">
-            <img 
-            class="w-[1720px] h-[756px] rounded-[30px] object-cover mx-auto" 
-            src="/tuma/Ally_Hero_cf171ede4ff754c27339_945b0b9698.jpg" 
-            alt="Handheld device showcasing new arrivals">
+            <img class="w-[1720px] h-[756px] rounded-[30px] object-cover mx-auto"
+                src="/tuma/Ally_Hero_cf171ede4ff754c27339_945b0b9698.jpg" alt="Handheld device showcasing new arrivals">
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    <footer class="bg-[#FAFAFA] text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+
+            <!-- Peripherals -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Peripherals</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#555454]">Mice</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Keyboard</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Monitor</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Headset/Microphone</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Controller</a></li>
+                </ul>
+            </div>
+
+            <!-- Components -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Components</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Motherboards</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Graphic Cards</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">CPUs</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Power Supply</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Memory</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Storage</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Cooler</a></li>
+                </ul>
+            </div>
+
+            <!-- Case -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Case</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">NZXT</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Cooler Master</a></li>
+                </ul>
+            </div>
+
+            <!-- Laptops -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Laptops</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Asus</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Lenovo</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Gamer</a></li>
+                </ul>
+            </div>
+
+            <!-- Laptop Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Email us</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Location</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="max-w-3xl mx-auto mt-12 px-6 text-center">
+            <h3 class="text-xl font-semibold text-[#27272A] mb-4">Subscribe to our newsletter</h3>
+            <p class="text-sm mb-6 text-[#555454]">
+                Receive weekly updates with the newest insights, trends, tools, straight to your email.
+            </p>
+            <form class="flex max-w-md mx-auto">
+                <input type="email" placeholder="you@example.com"
+                    class="w-full px-3 py-2 rounded-l-md focus:outline-none text-gray-900" />
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+            class="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+            <p class="text-sm text-[#555454]">© 2014 ACME Inc. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0 text-[#555454]">
+                <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>
-<!--  -->
