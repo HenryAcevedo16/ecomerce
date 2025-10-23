@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="This is a sample HTML document.">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="min-h-screen bg-[linear-gradient(to_bottom,_#1B1A24_0%,_#FFF8F8_0%,_#E2E2E2_34%,_#FAFAFA_100%)]">
+    <header class="w-full ">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-8 py-3 pt-6">
+            <!-- Logo -->
+            <a href="/index.html" class="flex items-center">
+                <img src="logo.png" class="w-14 h-14 rounded-full object-contain" alt="Logo" />
+            </a>
+
+            <!-- Menú -->
+            <ul
+                class="flex items-center justify-center text-lg p-3 text-[#8F8F8F] space-x-6 rounded-full shadow-md px-10 bg-[#F9F9FA]/80">
+                <li><a href="#home" class="text-[#0B1C38] font-semibold">Inicio</a></li>
+                <li><a href="#Category">Categoría</a></li>
+                <li><a href="#Contact">Contacto</a></li>
+                <li><a href="#About">Nosotros</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+
+            <!-- Íconos -->
+            <div class="flex items-center gap-6">
+                <a href="#Cart">
+                    <img src="/tuma/shopping-cart_15576198.gif" alt="Carrito"
+                        class="w-10 h-10 opacity-80 hover:opacity-100 transition">
+                </a>
+                <a href="#Profile">
+                    <img src="/tuma/user_8484069.png" alt="Perfil"
+                        class="w-8 h-8 opacity-80 hover:opacity-100 transition">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero-banner" class="mt-8 ">
+            <div class="h-[78px] text-center bg-[#2B2A2A] text-[#FFFFFF] p-6 space-x-3 text-2xl sm:space-x-10 2xl">EL
+                FUTURO ES AHORA.
+                TECNOLOGÍA
+                SIN LÍMITES.
+                <span class="text-1xl">Encuentra los componentes, laptops y accesorios que redefinen tu
+                    experiencia.</span>
+                <strong class="text-[#4742D5] text-1xl">EXPLORAR PRODUCTOS ></strong>
+            </div>
+        </section>
+
+        <section class="relative w-full" id="hero-carousel">
+            <div id="carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-[580px] sm:h-[500px] lg:h-[580px] overflow-hidden">
+
+                    <!-- Slide 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/tuma/componentes.jpeg"
+                            class="absolute block w-full h-full object-cover object-center" alt="Gaming Setup" />
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/tuma/banner_1737539824c05a4e4dca0dad28032320d55225166b.jpeg"
+                            class="absolute block w-full h-full object-cover object-center" alt="Laptops Gaming" />
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/tuma/monitor.jpeg" class="absolute block w-full h-full object-cover object-center"
+                            alt="Ryzen Radeon Banner" />
+                    </div>
+                </div>
+
+                <!-- Indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+
+                <!-- Controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50">
+                        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                    </span>
+                </button>
+
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50">
+                        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+
+        <section id="shop-by-category" class="py-16 bg-[#FAFAFA]">
+            <div class="max-w-[1800px] mx-auto px-6 sm:px-8 md:px-10">
+                <h2 class="text-5xl md:text-5xl font-bold text-gray-800 mb-10 text-center mb-20">
+                    Shop by Category
+                </h2>
+
+                <!-- Masonry layout -->
+                <div class="columns-2 gap-[32px]">
+
+                    <!-- Perifericos -->
+                    <a href="#Perifericos"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/M314_1080x.webp" alt="Perifericos"
+                            class="w-full object-cover aspect-[850/641] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Perifericos
+                        </div>
+                    </a>
+
+                    <!-- Componentes -->
+                    <a href="#Case"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/1820_1213.jpg" alt="Case"
+                            class="w-full object-cover aspect-[850/767] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Case
+                        </div>
+                    </a>
+
+                    <!-- Case -->
+                    <a href="#Componentes"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/Processor-black-background.jpg" alt="Componentes"
+                            class="w-full object-cover aspect-[850/767] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Componentes
+                        </div>
+                    </a>
+
+                    <!-- Laptops -->
+                    <a href="#Laptops"
+                        class="relative overflow-hidden rounded-[30px] group cursor-pointer mb-[24px] block">
+                        <img src="/tuma/Alienware_2D00_17_2D00_Front_2D00_Reflection_2D00_1200_5F00_74014EC9.jpg"
+                            alt="Laptops"
+                            class="w-full object-cover aspect-[850/641] transition-transform duration-500 group-hover:scale-105 rounded-[30px]">
+                        <div
+                            class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/30 px-3 py-1 rounded-lg">
+                            Laptops
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="featured-products" class="py-16 bg-[#FAFAFA]">
+
+            <div class="max-w-[1800px] mx-auto px-6 sm:px-8 md:px-10">
+                <h2 class="text-5xl md:text-5xl font-bold text-gray-800 mb-10 text-center mb-20">Our Feature Products
+                </h2>
+
+                <!-- Grid Cards -->
+                <div
+                    class="w-full max-w-[1800px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center px-6 py-10">
+
+                    <!-- Card 1 -->
+                    <div class="w-[560px] h-[676px] bg-white rounded-2xl shadow-md p-5 ">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4 mx-auto transition-transform hover:scale-105 duration-300"
+                            src="/tuma/ASUS ROG ASTRAL VGA RTX5080-O16G & RTX5090-O32G GAMING - Powerful Overclocked GPUS.jpg"
+                            alt="ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming" />
+                        <h3 class="text-2xl mb-3 font-semibold text-gray-800 text-center">
+                            ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-center">
+                            Powerful Overclocked GPUs for Gaming
+                        </p>
+                        <div class="flex justify-center">
+                            <button
+                                class="rounded-[20px] bg-[#006FEE] text-white text-md px-6 py-2 hover:bg-[#0056c7] transition-all">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="w-[560px] h-[676px] bg-white rounded-2xl shadow-md p-5">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4 mx-auto transition-transform hover:scale-105 duration-300"
+                            src="/tuma/razer-viper-mini-signature-edition.jpg"
+                            alt="Razer Viper Mini Signature Edition" />
+                        <h3 class="text-2xl mb-3 font-semibold text-gray-800 text-center">
+                            Razer Viper Mini Signature Edition
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-center">
+                            Lightweight and Ergonomic Gaming Mouse
+                        </p>
+                        <div class="flex justify-center">
+                            <button
+                                class="rounded-[20px] bg-[#006FEE] text-white text-md px-6 py-2 hover:bg-[#0056c7] transition-all">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="w-[560px] h-[676px] bg-white rounded-2xl shadow-md p-5">
+                        <img class="w-[528px] h-[428px] object-cover rounded-lg mb-4 mx-auto transition-transform hover:scale-105 duration-300"
+                            src="/tuma/3EA9EE56-0ABA-4A94-AFBF-1C5577773453.png" alt="ASUS ROG Zephyrus Duo SE 15" />
+                        <h3 class="text-2xl mb-3 font-semibold text-gray-800 text-center">
+                            ASUS ROG Astral GeForce RTX™ 5090 OC Edition Gaming
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-center">
+                            Powerful Overclocked GPUs for Gaming
+                        </p>
+                        <div class="flex justify-center">
+                            <button
+                                class="rounded-[20px] bg-[#006FEE] text-white text-md px-6 py-2 hover:bg-[#0056c7] transition-all">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <section id="What's New" class="py-16 bg-[#FAFAFA] p-6">
+            <img class="w-[1720px] h-[756px] rounded-[30px] object-cover mx-auto"
+                src="/tuma/Ally_Hero_cf171ede4ff754c27339_945b0b9698.jpg" alt="Handheld device showcasing new arrivals">
+        </section>
+
+        <!-- Testimonios -->
+
+        <section class="bg-gradient-to-b from-[#FAFAFA] via-[#EDEDED] to-white py-20" id="Testimonios">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">
+                    Testimonios
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Card -->
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “Me ayudaron rápido con todas mis dudas y el producto es original. Sin duda volveré a
+                            comprar.”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Carlos P.</h4>
+                                <p class="text-sm text-gray-500">Comprador verificado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “La calidad del producto superó mis expectativas. Además, el envío fue muy rápido.”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">María R.</h4>
+                                <p class="text-sm text-gray-500">Compradora verificada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “Excelente atención al cliente y productos bien empacados. Se nota el cuidado en cada
+                            detalle.”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Andrés G.</h4>
+                                <p class="text-sm text-gray-500">Comprador verificado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “Mi pedido llegó antes de lo esperado y perfectamente empacado. 100% recomendado.”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Laura P.</h4>
+                                <p class="text-sm text-gray-500">Compradora verificada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “Recibí mi pedido el mismo día, todo llegó en perfecto estado y funcionando. ¡Excelente
+                            servicio!”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Luis F.</h4>
+                                <p class="text-sm text-gray-500">Comprador verificado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl p-6 shadow-lg border border-white/30 bg-white/60 backdrop-blur-xl transition hover:scale-[1.02]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex text-yellow-400 text-xl">★★★★★</div>
+                            <span class="text-gray-500 text-sm">5.0</span>
+                        </div>
+                        <p class="text-gray-800 text-lg mb-6">
+                            “Productos de alta calidad y atención personalizada. Definitivamente volveré a comprar.”
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Cliente"
+                                class="w-14 h-14 rounded-full object-cover" />
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Carla D.</h4>
+                                <p class="text-sm text-gray-500">Compradora verificada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-[#FAFAFA] text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+
+            <!-- Peripherals -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Peripherals</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#555454]">Mice</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Keyboard</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Monitor</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Headset/Microphone</a></li>
+                    <li><a href="#" class="hover:text-[#555454]">Controller</a></li>
+                </ul>
+            </div>
+
+            <!-- Components -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Components</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Motherboards</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Graphic Cards</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">CPUs</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Power Supply</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Memory</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Storage</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Cooler</a></li>
+                </ul>
+            </div>
+
+            <!-- Case -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Case</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">NZXT</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Cooler Master</a></li>
+                </ul>
+            </div>
+
+            <!-- Laptops -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Laptops</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Asus</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Lenovo</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Gamer</a></li>
+                </ul>
+            </div>
+
+            <!-- Laptop Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#27272A] mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm text-[#555454]">
+                    <li><a href="#" class="hover:text-[#424242]">Email us</a></li>
+                    <li><a href="#" class="hover:text-[#424242]">Location</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="max-w-3xl mx-auto mt-12 px-6 text-center">
+            <h3 class="text-xl font-semibold text-[#27272A] mb-4">Subscribe to our newsletter</h3>
+            <p class="text-sm mb-6 text-[#555454]">
+                Receive weekly updates with the newest insights, trends, tools, straight to your email.
+            </p>
+            <form class="flex max-w-md mx-auto">
+                <input type="email" placeholder="you@example.com"
+                    class="w-full px-3 py-2 rounded-l-md focus:outline-none text-gray-900" />
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+            class="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6">
+            <p class="text-sm text-[#555454]">© 2014 ACME Inc. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0 text-[#555454]">
+                <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-drawer"></div>
+
+    <script>
+        fetch("/cart-flotante.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("cart-drawer").innerHTML = html;
+            })
+            .catch(err => console.error("Error cargando el carrito:", err));
+    </script>
+
+</body>
+
+</html>
